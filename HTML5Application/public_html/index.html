@@ -6,11 +6,102 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Zeenat's HTML application Title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type='text/css'>
+            table{
+                border:2px solid red ;
+            }
+            td {
+                border:2px solid black ;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+       
+        <header>This is Header</header>
+        
+        <h1>H1 heading text </h1>
+        <h2>H2 heading text </h2>
+        <h3>H3 heading text </h3>
+        <h4>H4 heading text </h4>
+        <h5>H5 heading text </h5>
+        <h6>H6 heading text </h6>
+        <h6><BIG>H6 BIG heading text </big></h6>
+        <big> BIG TEXT</big>
+        <small>small text </small>
+
+        <br/> 
+        <br>
+        <!--</br> -->
+        <div> 
+            <p><big>tag  &nbsp; &lt; &gt; <> defines a paragraph of text.</big> <i><u><b>It is a block-level element </b></u></i><span style='color:Red;font-style:italic '> Inline container used to mark up a part of text  </span> and always starts on a new line. Before and after each paragraph, browsers add margin automatically. You can modify the margins using the CSS margin property . </p>
+        </div>
+        <!-- EXPLORE  the alt text not appearing-->
+        <img src='sample.jpg' alt='source not available' height='50' width='30'/>
+        <!--horizontal rule EXPLORE -->
+        <hr width='30%'/>
+        <a href='index.html'> Home </a>
+        <!-- EXPLORE  the different image-->
+        <ol type="i"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ol>
+        <ol type="I"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ol>
+        <ol type="a"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ol>
+        <ol type="A"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ol>
+        <!-- EXPLORE  flower -->
+        <ul type="disc"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ul>
+        <ul type="square"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ul>
+        <ul type="circle"><li> Item 1 </li> <li> Item 2 </li> <li> Item 3 </li> <li> Item 4 </li> </ul>
+        <div id='registration'>
+        <form>
+            <section id='Names'>
+            <label for='FirstName'>First Name</label>
+            <input type='text' name='FirstName' placeholder='eg. Zeenat' required>
+            <br/>
+            <br/>
+            <label for='LastName'>Last Name</label>
+            <input type='text' name='LastName' placeholder='eg. Rehman' required>
+            </section>
+            <div >
+            <input type='radio' name='Gender' value='Male'>
+            <label >Male</label>
+            <input type='radio' name='Gender' value='Female'>
+            <label>Female</label>
+            </div>
+            <div>
+            <label for='Password'>Password</label>
+            <input type='password' name='Password'  required>
+            <label for='Email'>E-mail</label>
+            <input type='email' name='Email' placeholder='zeenat.rehman@gmail.com' required>            
+            </div>
+            <div>
+                <label for='Month'>Month</label>
+                <select name='Month'> 
+                    <option value='0' selected disabled> Month </option>
+                    <option value='1' > Jan </option>
+                    <option value='2' > Feb </option>
+                    <option value='3' > Mar </option>
+                        
+                                   
+                </select>
+            </div>
+            <input name='agree' type='checkbox' >
+            <label for='agree'> I agree ....</label> 
+            <br/>
+            <button type='Submit'>Save</button>
+            <button type='Reset'>Cancel</button>
+            <button type='Button'>Save And Close</button>
+            
+        </form>
+        </div>
+        <table >
+            <thead> <th> Name </th> <th> Email </th></thead>
+           <tbody> 
+                <tr><td> ABC</td> <td>abc@gmail.com </td> </tr> 
+                <tr><td> XYZ </td> </tr>
+           </tbody>
+        </table>
+        
+        <footer>This is footer</footer>
     </body>
 </html>
