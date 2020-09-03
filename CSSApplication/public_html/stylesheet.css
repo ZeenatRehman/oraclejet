@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 3, 2020, 1:55:28 PM
+    Author     : ZREHMAN
+*/
+    /*
+    this is a css selector based on tag element
+    */
+    h1h2 {
+        color: aqua;
+       } 
+    a {
+         color: red;
+    }
+    /*
+    this is a css selector based on ID
+    */    
+    #main-header
+    {
+        color: pink;
+        font-size:30px;
+    }
+     /*
+    this is a css selector based on class
+    */  
+    .large,.big
+    {
+        font-size:200%;  
+    }
+    .big
+    {
+        font-size:200%;  
+    }    
+     /*
+    this is a css selector based on another class
+    */  
+    
+    .blue
+    {
+        color: blue;
+        
+    }
+     /*
+    this is a css selector combination (without any spaces)
+     .selector1.selector2
+     {
+       property:value;
+     }
+    */    
+    h2#sub-header
+    {
+        color: red;
+    }
+    /*
+    this is a css selector combination ancestor child
+    */
+    div p
+    {
+      color:green;font-size:0.5em;   
+    }
+    *{
+     font-family:arial;   
+    }
+    .train li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+ul.traininner li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 10px 20px 0 0;
+    height: 10px;
+    width: 10px;
+    background-image: url("http://i.imgur.com/F05JSPD.png");
+    background-repeat: no-repeat;
+}
+/*
+Absolute Length
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+Relative Length
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to the width of the “0” (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport’s* smaller dimension	
+vmax	Relative to 1% of viewport’s* larger dimension	
+%	Relative to the parent element    
+    */
+    
+    
+    
+
